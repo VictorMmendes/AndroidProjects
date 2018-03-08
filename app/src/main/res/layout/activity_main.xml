@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.edu.ifpr.paranagua.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
+
+        <EditText
+            android:id="@+id/loginTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:ems="10"
+            android:hint=" Username or email"
+            android:inputType="textWebEmailAddress" />
+
+        <EditText
+            android:id="@+id/pwPf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint=" Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/okBt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/pwPf"
+            android:layout_alignLeft="@+id/pwPf"
+            android:layout_alignRight="@+id/pwPf"
+            android:layout_alignStart="@+id/pwPf"
+            android:layout_below="@+id/pwPf"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorGreenPrimary"
+            android:text="Login"
+            android:textColor="@color/colorWhiteFont" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mainLb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/relativeLayout"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Sign in"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp" />
+
+</RelativeLayout>
